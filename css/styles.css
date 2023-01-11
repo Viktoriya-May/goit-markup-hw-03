@@ -17,7 +17,7 @@ margin-left: auto;
 margin-right: auto;
 padding-left: 15px;
 padding-right: 15px;
-outline: 2px solid red;
+/* outline: 2px solid red; */
 }
 
 :root{
@@ -117,9 +117,12 @@ margin-right: 40px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-}
+    min-width: 492px;
+    margin: auto;
+    }
 .hero{
     background-color: #2E2F42;
+
 }
 .section-title{
     color: var(--title-text-color);
@@ -128,6 +131,7 @@ margin-right: 40px;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 .button-main{
     font-family: 'Roboto';
@@ -142,22 +146,24 @@ margin-right: 40px;
     border-color: transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-   min-width: 170px;
-   padding: 16px 32px;
+    min-width: 170px;
+    padding: 16px 32px;
+    display: block;
+    margin:auto;
+   
 }
 .button-main:hover,
 .button-main:focus {
       background-color: var(--active-buttons-background);
 }
-.team{
-    background-color:#F4F4FD; 
-}
+
 .features-title, .person, .item{
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 .visual-hidden {
     position: absolute;
@@ -171,12 +177,46 @@ margin-right: 40px;
     clip-path: inset(50%);
     margin: -1px;
 }
+
+/* ------------------------------------------------------features--------------------------------- */
+.section-features{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.features{
+    display: flex;
+}
+.features-menu:not(:last-child){
+    margin-right: 24px;
+}
 .text{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+/* -----------------------------------------------------Наша робота------------------------------- */
+.section-work{
+    padding-bottom: 120px;
+}
+.work{
+    display: flex;
+    gap: 24px;
+    width: calc((100%-48px)/3);
+}
+/* ----------------------------------------------------Наша команда---------------------------------- */
+.section-team{
+    background-color:#F4F4FD; 
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.team-menu{
+    display: flex;
+    gap: 24px;
+    width:calc((100%-72px)/4);
+}
+
+
 /* -----------------------------------Footter--------------------------------------------------- */
 .footer {
     background-color: #2E2F42;
@@ -192,7 +232,16 @@ line-height: 1.16;
 color: #E7E9FC;
 }
 /* ---------------------------------------PORTFOLIO------------------------------------------------ */
-.buttons{
+.buttons-list{
+    display: flex;
+    align-items: center;
+    padding-top: 96px;
+    padding-bottom: 72px;
+}
+.buttons-menu:not(:last-child){
+    margin-right: 24px;
+}
+.buttons-portfolio{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     background-color: #F4F4FD;;
@@ -203,14 +252,12 @@ color: #E7E9FC;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.04em;
-
+    padding: 12px 24px;
 }
-.buttons:hover,
-.buttons:focus {
+
+.buttons-portfolio:hover,
+.buttons-portfolio:focus {
       background-color: var(--active-buttons-background);
       color: var(--primary-licht-color);
 }
