@@ -308,11 +308,10 @@ justify-content: center;
 align-items: flex-start;
 padding: 0px 16px;
 gap: 8px;
-
-
 }
 
-
-
-
+.mention{
+    text-decoration: none;
+    
+}
 
