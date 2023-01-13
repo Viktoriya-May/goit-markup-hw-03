@@ -17,7 +17,6 @@ margin-left: auto;
 margin-right: auto;
 padding-left: 15px;
 padding-right: 15px;
-/* outline: 2px solid red; */
 }
 
 :root{
@@ -32,6 +31,10 @@ body{
     color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
     font-style: normal;
+}
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 /* -------------------------------------HEADER---------------------------------------------- */
@@ -61,11 +64,9 @@ body{
 .header{
     padding-top: 24px;
     padding-bottom: 24px;
-    background-color: #b0d2fa ;
-
 }
 .list{
-    list-style: none;  
+    list-style: none; 
 }
  .site-nav .link {
     color: var(--title-text-color);
@@ -75,7 +76,6 @@ body{
     line-height: 1.5;
     letter-spacing: 0.02em;
     }
-
 .contakt-phone, .contakt-mail {
     text-decoration: none;
     color: var(--primary-text-color);
@@ -112,17 +112,21 @@ margin-right: 40px;
 }
 /* ------------------------------------------------------HERO------------------------------------------------------ */
 .hero-title{
+    max-width: 492px;
     color: var(--primary-licht-color);
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    min-width: 492px;
     margin: auto;
+    margin-bottom: 48px;
     }
 .hero{
     background-color: #2E2F42;
-
+    max-width: 1440px;
+    padding-top: 192px;
+    padding-bottom: 192px;
+   margin: auto;
 }
 .section-title{
     color: var(--title-text-color);
@@ -150,13 +154,11 @@ margin-right: 40px;
     padding: 16px 32px;
     display: block;
     margin:auto;
-   
 }
 .button-main:hover,
 .button-main:focus {
       background-color: var(--active-buttons-background);
 }
-
 .features-title, .person, .item{
     color: var(--title-text-color);
     font-weight: 500;
@@ -177,14 +179,12 @@ margin-right: 40px;
     clip-path: inset(50%);
     margin: -1px;
 }
-
 /* ------------------------------------------------------features--------------------------------- */
-.section-features{
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
 .features{
     display: flex;
+}
+.features-menu{
+    width:calc((100%-72px)/4);
 }
 .features-menu:not(:last-child){
     margin-right: 24px;
@@ -197,7 +197,7 @@ margin-right: 40px;
 }
 /* -----------------------------------------------------Наша робота------------------------------- */
 .section-work{
-    padding-bottom: 120px;
+    padding-top: 0;
 }
 .work{
     display: flex;
@@ -207,19 +207,42 @@ margin-right: 40px;
 /* ----------------------------------------------------Наша команда---------------------------------- */
 .section-team{
     background-color:#F4F4FD; 
-    padding-top: 120px;
-    padding-bottom: 120px;
+    max-width: 1440px;
+    margin: auto;
 }
 .team-menu{
     display: flex;
     gap: 24px;
     width:calc((100%-72px)/4);
 }
-
-
+.card{
+    margin-top: 32px;
+    
+}
+.about{
+    margin-bottom: 32px;
+    max-width: ;
+}
+.team-item{
+background: #FFFFFF;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
+}
+.flex-team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   padding-left: 16px;
+   padding-right: 16px;
+}
 /* -----------------------------------Footter--------------------------------------------------- */
 .footer {
     background-color: #2E2F42;
+    max-width: 1440px;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .down{
 line-height: 1.16;
@@ -230,13 +253,20 @@ line-height: 1.16;
 }
 .footers {
 color: #E7E9FC;
+margin-top: 16px;
+max-width: 264px;
 }
 /* ---------------------------------------PORTFOLIO------------------------------------------------ */
+.portfolio-section{
+    padding-top: 0;
+}
+
 .buttons-list{
     display: flex;
     align-items: center;
     padding-top: 96px;
     padding-bottom: 72px;
+    justify-content: center;
 }
 .buttons-menu:not(:last-child){
     margin-right: 24px;
@@ -255,16 +285,32 @@ color: #E7E9FC;
     letter-spacing: 0.04em;
     padding: 12px 24px;
 }
-
 .buttons-portfolio:hover,
 .buttons-portfolio:focus {
       background-color: var(--active-buttons-background);
       color: var(--primary-licht-color);
 }
+.images-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    justify-content: center;
+}
+.employees-list{
+    flex-basis: ((100%-48px)/3);
+    background: #FFFFFF;
+border: 0.5px solid #F4F4FD;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.flex-element{
+justify-content: center;
+align-items: flex-start;
+padding: 0px 16px;
+gap: 8px;
 
 
-
-
+}
 
 
 
